@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="#FFF"
+    android:layout_height="match_parent"
+    tools:context=".signUp.EducationDetails">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/education"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Education"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="30dp"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:id="@+id/organisation"
+                android:hint="Organisation"
+                android:textSize="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/degree"
+                android:hint="Degree"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/location"
+                android:hint="Location"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Start Year : "
+                android:layout_marginTop="20dp"
+                android:textSize="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/startYear"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:autofillHints="2015"
+                android:entries="@array/years"></Spinner>
+            <TextView
+                android:text="End Year   : "
+                android:layout_marginTop="20dp"
+                android:textSize="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/endYear"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:autofillHints="2015"
+                android:entries="@array/years"></Spinner>
+
+
+
+            <Button
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="30dp"
+                android:id="@+id/save"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:background="#21B8DB"
+                android:textSize="20dp"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="#FFF" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
